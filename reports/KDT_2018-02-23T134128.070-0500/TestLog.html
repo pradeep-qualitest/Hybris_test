@@ -1,0 +1,688 @@
+<!--NOT run from jar file--><!--Run from machine with name 'null'--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Automation Test Log</title>
+<style type='text/css'>
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+th a {color: #FFFFFF;}
+.open-show {display: table-row;}
+.open-hide, .close-hide {display: none;}
+.tog-off a:before {content:'[+]';}
+.tog-on a:before {content:'[-]';}
+.tog-off {font-size: x-large; text-align: center;}
+.tog-on {font-size: x-large; text-align: center;}
+span {cursor:pointer;}
+</style>
+<script>function getClassList(e){var t=e.className,s=new Object;return s.elt=e,s.classList=t.split(' '),s.contains=function(e){return this.classList.indexOf(e)>=0},s.remove=function(e){for(var t=[];this.classList.length>0;){var s=this.classList.pop();s!=e&&t.push(s)}this.classList=t,this.elt.className=this.classList.join(' ')},s.add=function(e){this.classList.push(e),this.elt.className=this.classList.join(' ')},s.toggle=function(e){this.contains(e)?this.remove(e):this.add(e)},s.length=s.classList.length,s.item=function(e){return this.classList[e]},s}function tog(e){for(var t=document.getElementsByClassName(e),s=0;s<t.length;++s){var o=t[s],l=getClassList(o);if(o.getAttribute('data-thisclass')==e)l.toggle('open-show'),l.toggle('close-hide');else if(l.contains('open-show'))l.remove('open-show'),l.add('open-hide');else if(l.contains('open-hide')){for(var n=!0,i=0;i<l.length;i++){var g=document.getElementById(l.item(i));if(getClassList(g).contains('close-hide')){n=!1;break}}n&&(l.remove('open-hide'),l.add('open-show'))}}}function toggleAllElements(e,t){for(var s=document.getElementsByClassName(e);s.length>0;){var o=s[0],l=getClassList(o);l.toggle(e),l.toggle(t)}}function openAll(){toggleAllElements('close-hide','open-show'),toggleAllElements('open-hide','open-show'),toggleAllElements('tog-off','tog-on')}function closeAll(){toggleAllElements('open-show','close-hide'),toggleAllElements('open-hide','close-hide'),toggleAllElements('tog-on','tog-off')}function togParent(e){getClassList(e.parentNode).toggle('tog-on'),getClassList(e.parentNode).toggle('tog-off')}window.onload=function(){toggleAllElements('close-hide-temp','close-hide');for(var e=document.getElementsByClassName('tog-off-temp');e.length>0;){var t=document.getElementsByClassName(e[0].id),s=getClassList(e[0]);s.toggle('tog-off-temp'),t.length>0&&s.toggle('tog-off')}};</script>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<span id='open-hide'></span><span id='open-show'></span><span id='close-hide'></span>
+<hr size="1" noshade>
+<div>Log session start time Fri Feb 23 13:41:28 EST 2018<div>Run by: Qualitest-Manish\Qualitest</div><div style='float: right;'>vnull</div><br>
+</div>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Open <a onclick='openAll()' href='#'>all</a><br />Close <a onclick='closeAll()' href='#'>all</a></th><th>Test File</th><th>Test Case ID</th><th>Test Scenario</th><th>Keywords</th><th>Error Message</th><th>Result</th><th>Comments</th>
+</tr>
+<tr id='lvl1' ><td>Started: 2018/02/23 13:41:28.253</td>
+<td class='tog-off-temp' id='lvl1'><a onclick="tog('lvl1');togParent(this);" href='#lvl1'></a></td>
+<td colspan="2">PepBoys</td><td colspan="3"></td><td></td><td>Test started.</td></tr>
+<tr class="lvl1 close-hide-temp" data-thisclass='lvl1' id='lvl2' ><td>Step: 00:00:08.758<BR>Total: 00:00:08.758</td>
+<td class='tog-off-temp' id='lvl2'><a onclick="tog('lvl2');togParent(this);" href='#lvl2'></a></td>
+<td bgcolor=#CCCCCC>&bull;</td><td bgcolor=#CCCCCC>Tires_0001</td><td bgcolor=#CCCCCC></td><td bgcolor=#CCCCCC></td><td bgcolor=#CCCCCC></td><td bgcolor=#CCCCCC>STARTED</td><td bgcolor=#CCCCCC></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl3' ><td>Step: 00:00:00.015<BR>Total: 00:00:08.773</td>
+<td class='tog-off-temp' id='lvl3'><a onclick="tog('lvl3');togParent(this);" href='#lvl3'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Browser.Launch</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl3 lvl2 lvl1 close-hide-temp" data-thisclass='lvl3' ><td>Step: 00:00:00.004<BR>Total: 00:00:08.777</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Browser=chrome}</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl3' ><td>Step: 00:00:13.000<BR>Total: 00:00:21.777</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>Browser.Launch</td><td></td><td bgcolor=#00FF00>PASS</td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl4' ><td>Step: 00:00:00.003<BR>Total: 00:00:21.780</td>
+<td class='tog-off-temp' id='lvl4'><a onclick="tog('lvl4');togParent(this);" href='#lvl4'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Browser.NavigateTo</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl4 lvl2 lvl1 close-hide-temp" data-thisclass='lvl4' ><td>Step: 00:00:00.002<BR>Total: 00:00:21.782</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {URL=https://qa2-hybris.pepboys.com/}</td><td></td><td></td><td></td></tr>
+<tr class="lvl4 lvl2 lvl1 close-hide-temp" data-thisclass='lvl4' ><td>Step: 00:00:02.697<BR>Total: 00:00:24.479</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Navigated to https://qa2-hybris.pepboys.com/</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl4' ><td>Step: 00:00:00.076<BR>Total: 00:00:24.555</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>Browser.NavigateTo</td><td></td><td bgcolor=#00FF00>PASS</td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl5' ><td>Step: 00:00:00.012<BR>Total: 00:00:24.567</td>
+<td class='tog-off-temp' id='lvl5'><a onclick="tog('lvl5');togParent(this);" href='#lvl5'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>PepBoys.ClickMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl5 lvl2 lvl1 close-hide-temp" data-thisclass='lvl5' ><td>Step: 00:00:00.004<BR>Total: 00:00:24.571</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=Tires}</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl5' ><td>Step: 00:00:00.677<BR>Total: 00:00:25.248</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>PepBoys.ClickMenu</td><td>Unable to click Main menu element<br>Could not Click the element.<br>Could not find the matching element<br>no such window: target window already closed<br>from unknown error: web view not found<br>  (Session info: chrome=63.0.3239.132)<br>  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)<br>Command duration or timeout: 51 milliseconds<br>Build info: version: 'unknown', revision: 'unknown', time: 'unknown'<br>System info: host: 'Qualitest-Manish', ip: '172.21.37.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'<br>Driver info: org.openqa.selenium.chrome.ChromeDriver<br>Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir13296_18162}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]<br>Session ID: 7086161ba558c29756556b699c696305<br>*** Element info: {Using=xpath, value=//header/div[@class='primary-nav-container']/nav/ul/li/span/a[text()='Tires']}</td><td bgcolor=#FF0000>FAIL</td><td> - <a href="screenshots/shot_2018-02-23T134153.501-0500.png">Screen Shot</a></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl6' ><td>Step: 00:00:01.908<BR>Total: 00:00:27.156</td>
+<td class='tog-off-temp' id='lvl6'><a onclick="tog('lvl6');togParent(this);" href='#lvl6'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>PepBoys.ClickSubMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl6 lvl2 lvl1 close-hide-temp" data-thisclass='lvl6' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.157</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=$menuName, SubMenuName=$subMenuName}</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl6' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.158</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>PepBoys.ClickSubMenu</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl7' ><td>Step: 00:00:00.002<BR>Total: 00:00:27.160</td>
+<td class='tog-off-temp' id='lvl7'><a onclick="tog('lvl7');togParent(this);" href='#lvl7'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>PepBoys.NavigateToChooseStore</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl7 lvl2 lvl1 close-hide-temp" data-thisclass='lvl7' ><td>Step: 00:00:00.000<BR>Total: 00:00:27.160</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {YMMEName=$ymmeargs, YMMEValue=$ymmevalue, IsPreExisting=$isPreExisting}</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl7' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.161</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>PepBoys.NavigateToChooseStore</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl8' ><td>Step: 00:00:00.002<BR>Total: 00:00:27.163</td>
+<td class='tog-off-temp' id='lvl8'><a onclick="tog('lvl8');togParent(this);" href='#lvl8'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>PepBoys.ChooseStore</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl8 lvl2 lvl1 close-hide-temp" data-thisclass='lvl8' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.164</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Zip=$zip, StoreName=$storeName}</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl8' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.165</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>PepBoys.ChooseStore</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl9' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.166</td>
+<td class='tog-off-temp' id='lvl9'><a onclick="tog('lvl9');togParent(this);" href='#lvl9'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>PepBoys.ValidateTiresPRP</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl9 lvl2 lvl1 close-hide-temp" data-thisclass='lvl9' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.167</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod}</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl9' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.168</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>PepBoys.ValidateTiresPRP</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl10' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.169</td>
+<td class='tog-off-temp' id='lvl10'><a onclick="tog('lvl10');togParent(this);" href='#lvl10'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>PepBoys.AddToBag</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl10 lvl2 lvl1 close-hide-temp" data-thisclass='lvl10' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.170</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod, IsPRP=$fromPRPpage}</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl10' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.171</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>PepBoys.AddToBag</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl11' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.172</td>
+<td class='tog-off-temp' id='lvl11'><a onclick="tog('lvl11');togParent(this);" href='#lvl11'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>PepBoys.HandleShoppingCart</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl11 lvl2 lvl1 close-hide-temp" data-thisclass='lvl11' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.173</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Operation=$operation, AddToCart=$addCartMethod, DayOfWeek=$dayOfWeek, TimeOfDay=$timeOfDay, IsPRP=$fromPRPpage}</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl11' ><td>Step: 00:00:00.003<BR>Total: 00:00:27.176</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>PepBoys.HandleShoppingCart</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl12' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.177</td>
+<td class='tog-off-temp' id='lvl12'><a onclick="tog('lvl12');togParent(this);" href='#lvl12'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>PepBoys.ClickMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl12 lvl2 lvl1 close-hide-temp" data-thisclass='lvl12' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.178</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=$menuName2}</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl12' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.179</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>PepBoys.ClickMenu</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl13' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.180</td>
+<td class='tog-off-temp' id='lvl13'><a onclick="tog('lvl13');togParent(this);" href='#lvl13'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>PepBoys.ClickSubMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl13 lvl2 lvl1 close-hide-temp" data-thisclass='lvl13' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.181</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=$menuName2, SubMenuName=$subMenuName2}</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl13' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.182</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>PepBoys.ClickSubMenu</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl14' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.183</td>
+<td class='tog-off-temp' id='lvl14'><a onclick="tog('lvl14');togParent(this);" href='#lvl14'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>PepBoys.ClickSubCategory</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl14 lvl2 lvl1 close-hide-temp" data-thisclass='lvl14' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.184</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {SubCategoryName=$subCategoryName}</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl14' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.185</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>PepBoys.ClickSubCategory</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl15' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.186</td>
+<td class='tog-off-temp' id='lvl15'><a onclick="tog('lvl15');togParent(this);" href='#lvl15'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>PepBoys.ValidateProductsPRP</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl15 lvl2 lvl1 close-hide-temp" data-thisclass='lvl15' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.187</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod2}</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl15' ><td>Step: 00:00:00.003<BR>Total: 00:00:27.190</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>PepBoys.ValidateProductsPRP</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl16' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.191</td>
+<td class='tog-off-temp' id='lvl16'><a onclick="tog('lvl16');togParent(this);" href='#lvl16'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>PepBoys.AddToBag</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl16 lvl2 lvl1 close-hide-temp" data-thisclass='lvl16' ><td>Step: 00:00:00.002<BR>Total: 00:00:27.193</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod2, IsPRP=$fromPRPpage}</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl16' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.194</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>PepBoys.AddToBag</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl17' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.195</td>
+<td class='tog-off-temp' id='lvl17'><a onclick="tog('lvl17');togParent(this);" href='#lvl17'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>PepBoys.HandleShoppingCart</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl17 lvl2 lvl1 close-hide-temp" data-thisclass='lvl17' ><td>Step: 00:00:00.003<BR>Total: 00:00:27.198</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Operation=$operation, AddToCart=$addCartMethod2, DayOfWeek=$dayOfWeek, TimeOfDay=$timeOfDay, IsPRP=$fromPRPpage}</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl17' ><td>Step: 00:00:00.004<BR>Total: 00:00:27.202</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>PepBoys.HandleShoppingCart</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='lvl18' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.203</td>
+<td class='tog-off-temp' id='lvl18'><a onclick="tog('lvl18');togParent(this);" href='#lvl18'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>Tires_0001</td><td bgcolor=#EEEEEE>PepBoys.GuestCheckOut</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl18 lvl2 lvl1 close-hide-temp" data-thisclass='lvl18' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.204</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {FirstName=$firstName, LastName=$lastName, Address1=$address, City=$city, State=$state, ZipCode=$zipcode, PhoneNumber=$phoneNum, Email=$email, CardNumber=$cardNum, ExpiryMonth=$expMonth, ExpiryYear=$expYear, SecurityCode=$security, CheckoutOption=$checkoutOption}</td><td></td><td></td><td></td></tr>
+<tr class="lvl2 lvl1 close-hide-temp" data-thisclass='lvl2' id='~lvl18' ><td>Step: 00:00:00.001<BR>Total: 00:00:27.205</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0001</td><td>Tires_0001</td><td>PepBoys.GuestCheckOut</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl1 close-hide-temp" data-thisclass='lvl1' id='~lvl2' ><td>Step: 00:00:04.790<BR>Total: 00:00:31.995</td>
+<td></td>
+<td bgcolor=#FF0000>&bull;</td><td bgcolor=#FF0000>Tires_0001</td><td bgcolor=#FF0000></td><td bgcolor=#FF0000></td><td bgcolor=#FF0000></td><td bgcolor=#FF0000>FAIL</td><td bgcolor=#FF0000>Success: 2/16<br>Failures: 1/16<br>Skipped: 13/16</td></tr>
+<tr class="lvl1 close-hide-temp" data-thisclass='lvl1' id='lvl19' ><td>Step: 00:00:00.413<BR>Total: 00:00:32.408</td>
+<td class='tog-off-temp' id='lvl19'><a onclick="tog('lvl19');togParent(this);" href='#lvl19'></a></td>
+<td bgcolor=#CCCCCC>&bull;</td><td bgcolor=#CCCCCC>Tires_0002</td><td bgcolor=#CCCCCC></td><td bgcolor=#CCCCCC></td><td bgcolor=#CCCCCC></td><td bgcolor=#CCCCCC>STARTED</td><td bgcolor=#CCCCCC></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl20' ><td>Step: 00:00:00.007<BR>Total: 00:00:32.415</td>
+<td class='tog-off-temp' id='lvl20'><a onclick="tog('lvl20');togParent(this);" href='#lvl20'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Browser.Launch</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl20 lvl19 lvl1 close-hide-temp" data-thisclass='lvl20' ><td>Step: 00:00:00.002<BR>Total: 00:00:32.417</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Browser=chrome}</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl20' ><td>Step: 00:00:05.854<BR>Total: 00:00:38.271</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>Browser.Launch</td><td></td><td bgcolor=#00FF00>PASS</td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl21' ><td>Step: 00:00:00.003<BR>Total: 00:00:38.274</td>
+<td class='tog-off-temp' id='lvl21'><a onclick="tog('lvl21');togParent(this);" href='#lvl21'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Browser.NavigateTo</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl21 lvl19 lvl1 close-hide-temp" data-thisclass='lvl21' ><td>Step: 00:00:00.002<BR>Total: 00:00:38.276</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {URL=https://qa2-hybris.pepboys.com/}</td><td></td><td></td><td></td></tr>
+<tr class="lvl21 lvl19 lvl1 close-hide-temp" data-thisclass='lvl21' ><td>Step: 00:00:14.084<BR>Total: 00:00:52.360</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Navigated to https://qa2-hybris.pepboys.com/</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl21' ><td>Step: 00:00:00.005<BR>Total: 00:00:52.365</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>Browser.NavigateTo</td><td></td><td bgcolor=#00FF00>PASS</td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl22' ><td>Step: 00:00:00.001<BR>Total: 00:00:52.366</td>
+<td class='tog-off-temp' id='lvl22'><a onclick="tog('lvl22');togParent(this);" href='#lvl22'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>PepBoys.ClickMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl22 lvl19 lvl1 close-hide-temp" data-thisclass='lvl22' ><td>Step: 00:00:00.000<BR>Total: 00:00:52.366</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=Tires}</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl22' ><td>Step: 00:00:00.324<BR>Total: 00:00:52.690</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>PepBoys.ClickMenu</td><td></td><td bgcolor=#00FF00>PASS</td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl23' ><td>Step: 00:00:00.001<BR>Total: 00:00:52.691</td>
+<td class='tog-off-temp' id='lvl23'><a onclick="tog('lvl23');togParent(this);" href='#lvl23'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>PepBoys.ClickSubMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl23 lvl19 lvl1 close-hide-temp" data-thisclass='lvl23' ><td>Step: 00:00:00.001<BR>Total: 00:00:52.692</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=Tires, SubMenuName=Tires By Vehicle}</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl23' ><td>Step: 00:00:10.500<BR>Total: 00:01:03.192</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>PepBoys.ClickSubMenu</td><td></td><td bgcolor=#00FF00>PASS</td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl24' ><td>Step: 00:00:00.001<BR>Total: 00:01:03.193</td>
+<td class='tog-off-temp' id='lvl24'><a onclick="tog('lvl24');togParent(this);" href='#lvl24'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>PepBoys.NavigateToChooseStore</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl24 lvl19 lvl1 close-hide-temp" data-thisclass='lvl24' ><td>Step: 00:00:00.001<BR>Total: 00:01:03.194</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {YMMEName=Year,Make,Model,Engine,Drivetrain,Trim, YMMEValue=2011,HONDA,ACCORD,4-2354 2.4L DOHC,4WD/AWD,EX-L V6 COUPE, IsPreExisting=FALSE}</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl24' ><td>Step: 00:00:05.917<BR>Total: 00:01:09.111</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>PepBoys.NavigateToChooseStore</td><td>Unable to naviagte to store popup<br>Could not Click the element.<br>element not visible<br>  (Session info: chrome=63.0.3239.132)<br>  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)<br>Command duration or timeout: 113 milliseconds<br>Build info: version: 'unknown', revision: 'unknown', time: 'unknown'<br>System info: host: 'Qualitest-Manish', ip: '172.21.37.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'<br>Driver info: org.openqa.selenium.chrome.ChromeDriver<br>Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir8048_21505}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]<br>Session ID: 28aee1fc031d37bba7215258a7badbeb</td><td bgcolor=#FF0000>FAIL</td><td> - <a href="screenshots/shot_2018-02-23T134237.364-0500.png">Screen Shot</a></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl25' ><td>Step: 00:00:01.186<BR>Total: 00:01:10.297</td>
+<td class='tog-off-temp' id='lvl25'><a onclick="tog('lvl25');togParent(this);" href='#lvl25'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>PepBoys.ChooseStore</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl25 lvl19 lvl1 close-hide-temp" data-thisclass='lvl25' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.298</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Zip=$zip, StoreName=$storeName}</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl25' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.299</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>PepBoys.ChooseStore</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl26' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.300</td>
+<td class='tog-off-temp' id='lvl26'><a onclick="tog('lvl26');togParent(this);" href='#lvl26'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>PepBoys.ValidateTiresPRP</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl26 lvl19 lvl1 close-hide-temp" data-thisclass='lvl26' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.301</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod}</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl26' ><td>Step: 00:00:00.000<BR>Total: 00:01:10.301</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>PepBoys.ValidateTiresPRP</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl27' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.302</td>
+<td class='tog-off-temp' id='lvl27'><a onclick="tog('lvl27');togParent(this);" href='#lvl27'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>PepBoys.AddToBag</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl27 lvl19 lvl1 close-hide-temp" data-thisclass='lvl27' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.303</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod, IsPRP=$fromPRPpage}</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl27' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.304</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>PepBoys.AddToBag</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl28' ><td>Step: 00:00:00.002<BR>Total: 00:01:10.306</td>
+<td class='tog-off-temp' id='lvl28'><a onclick="tog('lvl28');togParent(this);" href='#lvl28'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>PepBoys.HandleShoppingCart</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl28 lvl19 lvl1 close-hide-temp" data-thisclass='lvl28' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.307</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Operation=$operation, AddToCart=$addCartMethod, DayOfWeek=$dayOfWeek, TimeOfDay=$timeOfDay, IsPRP=$fromPRPpage}</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl28' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.308</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>PepBoys.HandleShoppingCart</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl29' ><td>Step: 00:00:00.000<BR>Total: 00:01:10.308</td>
+<td class='tog-off-temp' id='lvl29'><a onclick="tog('lvl29');togParent(this);" href='#lvl29'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>PepBoys.ClickMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl29 lvl19 lvl1 close-hide-temp" data-thisclass='lvl29' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.309</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=$menuName2}</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl29' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.310</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>PepBoys.ClickMenu</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl30' ><td>Step: 00:00:00.000<BR>Total: 00:01:10.310</td>
+<td class='tog-off-temp' id='lvl30'><a onclick="tog('lvl30');togParent(this);" href='#lvl30'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>PepBoys.ClickSubMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl30 lvl19 lvl1 close-hide-temp" data-thisclass='lvl30' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.311</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=$menuName2, SubMenuName=$subMenuName2}</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl30' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.312</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>PepBoys.ClickSubMenu</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl31' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.313</td>
+<td class='tog-off-temp' id='lvl31'><a onclick="tog('lvl31');togParent(this);" href='#lvl31'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>PepBoys.ClickSubCategory</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl31 lvl19 lvl1 close-hide-temp" data-thisclass='lvl31' ><td>Step: 00:00:00.000<BR>Total: 00:01:10.313</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {SubCategoryName=$subCategoryName}</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl31' ><td>Step: 00:00:00.004<BR>Total: 00:01:10.317</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>PepBoys.ClickSubCategory</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl32' ><td>Step: 00:00:00.002<BR>Total: 00:01:10.319</td>
+<td class='tog-off-temp' id='lvl32'><a onclick="tog('lvl32');togParent(this);" href='#lvl32'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>PepBoys.ValidateProductsPRP</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl32 lvl19 lvl1 close-hide-temp" data-thisclass='lvl32' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.320</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod2}</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl32' ><td>Step: 00:00:00.000<BR>Total: 00:01:10.320</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>PepBoys.ValidateProductsPRP</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl33' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.321</td>
+<td class='tog-off-temp' id='lvl33'><a onclick="tog('lvl33');togParent(this);" href='#lvl33'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>PepBoys.AddToBag</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl33 lvl19 lvl1 close-hide-temp" data-thisclass='lvl33' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.322</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod2, IsPRP=$fromPRPpage}</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl33' ><td>Step: 00:00:00.000<BR>Total: 00:01:10.322</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>PepBoys.AddToBag</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl34' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.323</td>
+<td class='tog-off-temp' id='lvl34'><a onclick="tog('lvl34');togParent(this);" href='#lvl34'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>PepBoys.HandleShoppingCart</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl34 lvl19 lvl1 close-hide-temp" data-thisclass='lvl34' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.324</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Operation=$operation, AddToCart=$addCartMethod2, DayOfWeek=$dayOfWeek, TimeOfDay=$timeOfDay, IsPRP=$fromPRPpage}</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl34' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.325</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>PepBoys.HandleShoppingCart</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='lvl35' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.326</td>
+<td class='tog-off-temp' id='lvl35'><a onclick="tog('lvl35');togParent(this);" href='#lvl35'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>Tires_0002</td><td bgcolor=#EEEEEE>PepBoys.GuestCheckOut</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl35 lvl19 lvl1 close-hide-temp" data-thisclass='lvl35' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.327</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {FirstName=$firstName, LastName=$lastName, Address1=$address, City=$city, State=$state, ZipCode=$zipcode, PhoneNumber=$phoneNum, Email=$email, CardNumber=$cardNum, ExpiryMonth=$expMonth, ExpiryYear=$expYear, SecurityCode=$security, CheckoutOption=$checkoutOption}</td><td></td><td></td><td></td></tr>
+<tr class="lvl19 lvl1 close-hide-temp" data-thisclass='lvl19' id='~lvl35' ><td>Step: 00:00:00.001<BR>Total: 00:01:10.328</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0002</td><td>Tires_0002</td><td>PepBoys.GuestCheckOut</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl1 close-hide-temp" data-thisclass='lvl1' id='~lvl19' ><td>Step: 00:00:02.303<BR>Total: 00:01:12.631</td>
+<td></td>
+<td bgcolor=#FF0000>&bull;</td><td bgcolor=#FF0000>Tires_0002</td><td bgcolor=#FF0000></td><td bgcolor=#FF0000></td><td bgcolor=#FF0000></td><td bgcolor=#FF0000>FAIL</td><td bgcolor=#FF0000>Success: 4/16<br>Failures: 1/16<br>Skipped: 11/16</td></tr>
+<tr class="lvl1 close-hide-temp" data-thisclass='lvl1' id='lvl36' ><td>Step: 00:00:00.477<BR>Total: 00:01:13.108</td>
+<td class='tog-off-temp' id='lvl36'><a onclick="tog('lvl36');togParent(this);" href='#lvl36'></a></td>
+<td bgcolor=#CCCCCC>&bull;</td><td bgcolor=#CCCCCC>Tires_0003</td><td bgcolor=#CCCCCC></td><td bgcolor=#CCCCCC></td><td bgcolor=#CCCCCC></td><td bgcolor=#CCCCCC>STARTED</td><td bgcolor=#CCCCCC></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl37' ><td>Step: 00:00:00.002<BR>Total: 00:01:13.110</td>
+<td class='tog-off-temp' id='lvl37'><a onclick="tog('lvl37');togParent(this);" href='#lvl37'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Browser.Launch</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl37 lvl36 lvl1 close-hide-temp" data-thisclass='lvl37' ><td>Step: 00:00:00.001<BR>Total: 00:01:13.111</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Browser=chrome}</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl37' ><td>Step: 00:00:05.601<BR>Total: 00:01:18.712</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>Browser.Launch</td><td></td><td bgcolor=#00FF00>PASS</td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl38' ><td>Step: 00:00:00.000<BR>Total: 00:01:18.712</td>
+<td class='tog-off-temp' id='lvl38'><a onclick="tog('lvl38');togParent(this);" href='#lvl38'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Browser.NavigateTo</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl38 lvl36 lvl1 close-hide-temp" data-thisclass='lvl38' ><td>Step: 00:00:00.001<BR>Total: 00:01:18.713</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {URL=https://qa2-hybris.pepboys.com/}</td><td></td><td></td><td></td></tr>
+<tr class="lvl38 lvl36 lvl1 close-hide-temp" data-thisclass='lvl38' ><td>Step: 00:00:10.082<BR>Total: 00:01:28.795</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Navigated to https://qa2-hybris.pepboys.com/</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl38' ><td>Step: 00:00:00.026<BR>Total: 00:01:28.821</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>Browser.NavigateTo</td><td></td><td bgcolor=#00FF00>PASS</td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl39' ><td>Step: 00:00:00.002<BR>Total: 00:01:28.823</td>
+<td class='tog-off-temp' id='lvl39'><a onclick="tog('lvl39');togParent(this);" href='#lvl39'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>PepBoys.ClickMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl39 lvl36 lvl1 close-hide-temp" data-thisclass='lvl39' ><td>Step: 00:00:00.001<BR>Total: 00:01:28.824</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=Tires}</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl39' ><td>Step: 00:00:01.352<BR>Total: 00:01:30.176</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>PepBoys.ClickMenu</td><td></td><td bgcolor=#00FF00>PASS</td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl40' ><td>Step: 00:00:00.002<BR>Total: 00:01:30.178</td>
+<td class='tog-off-temp' id='lvl40'><a onclick="tog('lvl40');togParent(this);" href='#lvl40'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>PepBoys.ClickSubMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl40 lvl36 lvl1 close-hide-temp" data-thisclass='lvl40' ><td>Step: 00:00:00.001<BR>Total: 00:01:30.179</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=Tires, SubMenuName=Tires By Vehicle}</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl40' ><td>Step: 00:00:05.378<BR>Total: 00:01:35.557</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>PepBoys.ClickSubMenu</td><td></td><td bgcolor=#00FF00>PASS</td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl41' ><td>Step: 00:00:00.000<BR>Total: 00:01:35.557</td>
+<td class='tog-off-temp' id='lvl41'><a onclick="tog('lvl41');togParent(this);" href='#lvl41'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>PepBoys.NavigateToChooseStore</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl41 lvl36 lvl1 close-hide-temp" data-thisclass='lvl41' ><td>Step: 00:00:00.000<BR>Total: 00:01:35.557</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {YMMEName=Year,Make,Model,Engine,Drivetrain,Trim, YMMEValue=2011,HONDA,ACCORD,4-2354 2.4L DOHC,4WD/AWD,EX-L V6 COUPE, IsPreExisting=FALSE}</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl41' ><td>Step: 00:00:02.967<BR>Total: 00:01:38.524</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>PepBoys.NavigateToChooseStore</td><td>Unable to naviagte to store popup<br>Could not Click the element.<br>element not visible<br>  (Session info: chrome=63.0.3239.132)<br>  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)<br>Command duration or timeout: 29 milliseconds<br>Build info: version: 'unknown', revision: 'unknown', time: 'unknown'<br>System info: host: 'Qualitest-Manish', ip: '172.21.37.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'<br>Driver info: org.openqa.selenium.chrome.ChromeDriver<br>Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir11212_32146}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]<br>Session ID: d5c12471a159f921e2663b3d9ceac8ac</td><td bgcolor=#FF0000>FAIL</td><td> - <a href="screenshots/shot_2018-02-23T134306.777-0500.png">Screen Shot</a></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl42' ><td>Step: 00:00:00.218<BR>Total: 00:01:38.742</td>
+<td class='tog-off-temp' id='lvl42'><a onclick="tog('lvl42');togParent(this);" href='#lvl42'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>PepBoys.ChooseStore</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl42 lvl36 lvl1 close-hide-temp" data-thisclass='lvl42' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.742</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Zip=$zip, StoreName=$storeName}</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl42' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.742</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>PepBoys.ChooseStore</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl43' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.742</td>
+<td class='tog-off-temp' id='lvl43'><a onclick="tog('lvl43');togParent(this);" href='#lvl43'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>PepBoys.ValidateTiresPRP</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl43 lvl36 lvl1 close-hide-temp" data-thisclass='lvl43' ><td>Step: 00:00:00.001<BR>Total: 00:01:38.743</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod}</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl43' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.743</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>PepBoys.ValidateTiresPRP</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl44' ><td>Step: 00:00:00.003<BR>Total: 00:01:38.746</td>
+<td class='tog-off-temp' id='lvl44'><a onclick="tog('lvl44');togParent(this);" href='#lvl44'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>PepBoys.AddToBag</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl44 lvl36 lvl1 close-hide-temp" data-thisclass='lvl44' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.746</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod, IsPRP=$fromPRPpage}</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl44' ><td>Step: 00:00:00.001<BR>Total: 00:01:38.747</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>PepBoys.AddToBag</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl45' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.747</td>
+<td class='tog-off-temp' id='lvl45'><a onclick="tog('lvl45');togParent(this);" href='#lvl45'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>PepBoys.HandleShoppingCart</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl45 lvl36 lvl1 close-hide-temp" data-thisclass='lvl45' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.747</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Operation=$operation, AddToCart=$addCartMethod, DayOfWeek=$dayOfWeek, TimeOfDay=$timeOfDay, IsPRP=$fromPRPpage}</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl45' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.747</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>PepBoys.HandleShoppingCart</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl46' ><td>Step: 00:00:00.001<BR>Total: 00:01:38.748</td>
+<td class='tog-off-temp' id='lvl46'><a onclick="tog('lvl46');togParent(this);" href='#lvl46'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>PepBoys.ClickMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl46 lvl36 lvl1 close-hide-temp" data-thisclass='lvl46' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.748</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=$menuName2}</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl46' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.748</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>PepBoys.ClickMenu</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl47' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.748</td>
+<td class='tog-off-temp' id='lvl47'><a onclick="tog('lvl47');togParent(this);" href='#lvl47'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>PepBoys.ClickSubMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl47 lvl36 lvl1 close-hide-temp" data-thisclass='lvl47' ><td>Step: 00:00:00.001<BR>Total: 00:01:38.749</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=$menuName2, SubMenuName=$subMenuName2}</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl47' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.749</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>PepBoys.ClickSubMenu</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl48' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.749</td>
+<td class='tog-off-temp' id='lvl48'><a onclick="tog('lvl48');togParent(this);" href='#lvl48'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>PepBoys.ClickSubCategory</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl48 lvl36 lvl1 close-hide-temp" data-thisclass='lvl48' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.749</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {SubCategoryName=$subCategoryName}</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl48' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.749</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>PepBoys.ClickSubCategory</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl49' ><td>Step: 00:00:00.001<BR>Total: 00:01:38.750</td>
+<td class='tog-off-temp' id='lvl49'><a onclick="tog('lvl49');togParent(this);" href='#lvl49'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>PepBoys.ValidateProductsPRP</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl49 lvl36 lvl1 close-hide-temp" data-thisclass='lvl49' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.750</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod2}</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl49' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.750</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>PepBoys.ValidateProductsPRP</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl50' ><td>Step: 00:00:00.001<BR>Total: 00:01:38.751</td>
+<td class='tog-off-temp' id='lvl50'><a onclick="tog('lvl50');togParent(this);" href='#lvl50'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>PepBoys.AddToBag</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl50 lvl36 lvl1 close-hide-temp" data-thisclass='lvl50' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.751</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod2, IsPRP=$fromPRPpage}</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl50' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.751</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>PepBoys.AddToBag</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl51' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.751</td>
+<td class='tog-off-temp' id='lvl51'><a onclick="tog('lvl51');togParent(this);" href='#lvl51'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>PepBoys.HandleShoppingCart</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl51 lvl36 lvl1 close-hide-temp" data-thisclass='lvl51' ><td>Step: 00:00:00.001<BR>Total: 00:01:38.752</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Operation=$operation, AddToCart=$addCartMethod2, DayOfWeek=$dayOfWeek, TimeOfDay=$timeOfDay, IsPRP=$fromPRPpage}</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl51' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.752</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>PepBoys.HandleShoppingCart</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='lvl52' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.752</td>
+<td class='tog-off-temp' id='lvl52'><a onclick="tog('lvl52');togParent(this);" href='#lvl52'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>Tires_0003</td><td bgcolor=#EEEEEE>PepBoys.GuestCheckOut</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl52 lvl36 lvl1 close-hide-temp" data-thisclass='lvl52' ><td>Step: 00:00:00.000<BR>Total: 00:01:38.752</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {FirstName=$firstName, LastName=$lastName, Address1=$address, City=$city, State=$state, ZipCode=$zipcode, PhoneNumber=$phoneNum, Email=$email, CardNumber=$cardNum, ExpiryMonth=$expMonth, ExpiryYear=$expYear, SecurityCode=$security, CheckoutOption=$checkoutOption}</td><td></td><td></td><td></td></tr>
+<tr class="lvl36 lvl1 close-hide-temp" data-thisclass='lvl36' id='~lvl52' ><td>Step: 00:00:00.001<BR>Total: 00:01:38.753</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0003</td><td>Tires_0003</td><td>PepBoys.GuestCheckOut</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl1 close-hide-temp" data-thisclass='lvl1' id='~lvl36' ><td>Step: 00:00:04.538<BR>Total: 00:01:43.291</td>
+<td></td>
+<td bgcolor=#FF0000>&bull;</td><td bgcolor=#FF0000>Tires_0003</td><td bgcolor=#FF0000></td><td bgcolor=#FF0000></td><td bgcolor=#FF0000></td><td bgcolor=#FF0000>FAIL</td><td bgcolor=#FF0000>Success: 4/16<br>Failures: 1/16<br>Skipped: 11/16</td></tr>
+<tr class="lvl1 close-hide-temp" data-thisclass='lvl1' id='lvl53' ><td>Step: 00:00:00.568<BR>Total: 00:01:43.859</td>
+<td class='tog-off-temp' id='lvl53'><a onclick="tog('lvl53');togParent(this);" href='#lvl53'></a></td>
+<td bgcolor=#CCCCCC>&bull;</td><td bgcolor=#CCCCCC>Tires_0004</td><td bgcolor=#CCCCCC></td><td bgcolor=#CCCCCC></td><td bgcolor=#CCCCCC></td><td bgcolor=#CCCCCC>STARTED</td><td bgcolor=#CCCCCC></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl54' ><td>Step: 00:00:00.006<BR>Total: 00:01:43.865</td>
+<td class='tog-off-temp' id='lvl54'><a onclick="tog('lvl54');togParent(this);" href='#lvl54'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Browser.Launch</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl54 lvl53 lvl1 close-hide-temp" data-thisclass='lvl54' ><td>Step: 00:00:00.000<BR>Total: 00:01:43.865</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Browser=Chrome}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl54' ><td>Step: 00:00:05.029<BR>Total: 00:01:48.894</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>Browser.Launch</td><td></td><td bgcolor=#00FF00>PASS</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl55' ><td>Step: 00:00:00.002<BR>Total: 00:01:48.896</td>
+<td class='tog-off-temp' id='lvl55'><a onclick="tog('lvl55');togParent(this);" href='#lvl55'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Browser.NavigateTo</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl55 lvl53 lvl1 close-hide-temp" data-thisclass='lvl55' ><td>Step: 00:00:00.000<BR>Total: 00:01:48.896</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {URL=https://qa2-hybris.pepboys.com/}</td><td></td><td></td><td></td></tr>
+<tr class="lvl55 lvl53 lvl1 close-hide-temp" data-thisclass='lvl55' ><td>Step: 00:00:07.172<BR>Total: 00:01:56.068</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Navigated to https://qa2-hybris.pepboys.com/</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl55' ><td>Step: 00:00:00.011<BR>Total: 00:01:56.079</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>Browser.NavigateTo</td><td></td><td bgcolor=#00FF00>PASS</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl56' ><td>Step: 00:00:00.001<BR>Total: 00:01:56.080</td>
+<td class='tog-off-temp' id='lvl56'><a onclick="tog('lvl56');togParent(this);" href='#lvl56'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.ClickMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl56 lvl53 lvl1 close-hide-temp" data-thisclass='lvl56' ><td>Step: 00:00:00.000<BR>Total: 00:01:56.080</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=Tires}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl56' ><td>Step: 00:00:00.205<BR>Total: 00:01:56.285</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.ClickMenu</td><td></td><td bgcolor=#00FF00>PASS</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl57' ><td>Step: 00:00:00.001<BR>Total: 00:01:56.286</td>
+<td class='tog-off-temp' id='lvl57'><a onclick="tog('lvl57');togParent(this);" href='#lvl57'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.ClickSubMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl57 lvl53 lvl1 close-hide-temp" data-thisclass='lvl57' ><td>Step: 00:00:00.000<BR>Total: 00:01:56.286</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=Tires, SubMenuName=Tires By Vehicle}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl57' ><td>Step: 00:00:04.652<BR>Total: 00:02:00.938</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.ClickSubMenu</td><td></td><td bgcolor=#00FF00>PASS</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl58' ><td>Step: 00:00:00.002<BR>Total: 00:02:00.940</td>
+<td class='tog-off-temp' id='lvl58'><a onclick="tog('lvl58');togParent(this);" href='#lvl58'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.NavigateToChooseStore</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl58 lvl53 lvl1 close-hide-temp" data-thisclass='lvl58' ><td>Step: 00:00:00.001<BR>Total: 00:02:00.941</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {YMMEName=Year,Make,Model,Engine,Drivetrain,Trim, YMMEValue=2011,HONDA,ACCORD,4-2354 2.4L DOHC,4WD/AWD,EX-L V6 COUPE, IsPreExisting=FALSE}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl58' ><td>Step: 00:00:07.922<BR>Total: 00:02:08.863</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.NavigateToChooseStore</td><td>Unable to naviagte to store popup<br>Could not Click the element.<br>element not visible<br>  (Session info: chrome=63.0.3239.132)<br>  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)<br>Command duration or timeout: 651 milliseconds<br>Build info: version: 'unknown', revision: 'unknown', time: 'unknown'<br>System info: host: 'Qualitest-Manish', ip: '172.21.37.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'<br>Driver info: org.openqa.selenium.chrome.ChromeDriver<br>Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir5924_4954}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]<br>Session ID: 110032cef9684c2826dd92ded89947cc</td><td bgcolor=#FF0000>FAIL</td><td> - <a href="screenshots/shot_2018-02-23T134337.116-0500.png">Screen Shot</a></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl59' ><td>Step: 00:00:00.846<BR>Total: 00:02:09.709</td>
+<td class='tog-off-temp' id='lvl59'><a onclick="tog('lvl59');togParent(this);" href='#lvl59'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.ChooseStore</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl59 lvl53 lvl1 close-hide-temp" data-thisclass='lvl59' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.709</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Zip=$zip, StoreName=$storeName}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl59' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.710</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.ChooseStore</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl60' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.710</td>
+<td class='tog-off-temp' id='lvl60'><a onclick="tog('lvl60');togParent(this);" href='#lvl60'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.ValidateTiresPRP</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl60 lvl53 lvl1 close-hide-temp" data-thisclass='lvl60' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.710</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl60' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.711</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.ValidateTiresPRP</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl61' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.712</td>
+<td class='tog-off-temp' id='lvl61'><a onclick="tog('lvl61');togParent(this);" href='#lvl61'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.ChooseTiresOnAvail</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl61 lvl53 lvl1 close-hide-temp" data-thisclass='lvl61' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.712</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Avail=$available}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl61' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.712</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.ChooseTiresOnAvail</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl62' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.713</td>
+<td class='tog-off-temp' id='lvl62'><a onclick="tog('lvl62');togParent(this);" href='#lvl62'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.ChoosePRPProduct</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl62 lvl53 lvl1 close-hide-temp" data-thisclass='lvl62' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.713</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl62' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.714</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.ChoosePRPProduct</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl63' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.715</td>
+<td class='tog-off-temp' id='lvl63'><a onclick="tog('lvl63');togParent(this);" href='#lvl63'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.ValidateTiresPDP</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl63 lvl53 lvl1 close-hide-temp" data-thisclass='lvl63' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.716</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl63' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.716</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.ValidateTiresPDP</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl64' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.717</td>
+<td class='tog-off-temp' id='lvl64'><a onclick="tog('lvl64');togParent(this);" href='#lvl64'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.AddToBag</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl64 lvl53 lvl1 close-hide-temp" data-thisclass='lvl64' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.718</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod, IsPRP=$fromPRPpage}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl64' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.718</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.AddToBag</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl65' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.719</td>
+<td class='tog-off-temp' id='lvl65'><a onclick="tog('lvl65');togParent(this);" href='#lvl65'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.HandleShoppingCart</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl65 lvl53 lvl1 close-hide-temp" data-thisclass='lvl65' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.719</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Operation=$operation, AddToCart=$addCartMethod, DayOfWeek=$dayOfWeek, TimeOfDay=$timeOfDay, IsPRP=$fromPRPpage}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl65' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.719</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.HandleShoppingCart</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl66' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.720</td>
+<td class='tog-off-temp' id='lvl66'><a onclick="tog('lvl66');togParent(this);" href='#lvl66'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.ClickMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl66 lvl53 lvl1 close-hide-temp" data-thisclass='lvl66' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.720</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=$menuName2}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl66' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.721</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.ClickMenu</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl67' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.721</td>
+<td class='tog-off-temp' id='lvl67'><a onclick="tog('lvl67');togParent(this);" href='#lvl67'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.ClickSubMenu</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl67 lvl53 lvl1 close-hide-temp" data-thisclass='lvl67' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.721</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {MenuName=$menuName2, SubMenuName=$subMenuName2}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl67' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.722</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.ClickSubMenu</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl68' ><td>Step: 00:00:00.003<BR>Total: 00:02:09.725</td>
+<td class='tog-off-temp' id='lvl68'><a onclick="tog('lvl68');togParent(this);" href='#lvl68'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.ClickSubCategory</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl68 lvl53 lvl1 close-hide-temp" data-thisclass='lvl68' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.725</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {SubCategoryName=$subCategoryName}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl68' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.725</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.ClickSubCategory</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl69' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.726</td>
+<td class='tog-off-temp' id='lvl69'><a onclick="tog('lvl69');togParent(this);" href='#lvl69'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.ValidateProductsPRP</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl69 lvl53 lvl1 close-hide-temp" data-thisclass='lvl69' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.726</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod2}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl69' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.726</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.ValidateProductsPRP</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl70' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.727</td>
+<td class='tog-off-temp' id='lvl70'><a onclick="tog('lvl70');togParent(this);" href='#lvl70'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.AddToBag</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl70 lvl53 lvl1 close-hide-temp" data-thisclass='lvl70' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.727</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {AddToCart=$addCartMethod2, IsPRP=$fromPRPpage2}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl70' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.728</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.AddToBag</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl71' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.728</td>
+<td class='tog-off-temp' id='lvl71'><a onclick="tog('lvl71');togParent(this);" href='#lvl71'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.HandleShoppingCart</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl71 lvl53 lvl1 close-hide-temp" data-thisclass='lvl71' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.728</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Operation=$operation, AddToCart=$addCartMethod2, DayOfWeek=$dayOfWeek, TimeOfDay=$timeOfDay, IsPRP=$fromPRPpage}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl71' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.729</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.HandleShoppingCart</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='lvl72' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.729</td>
+<td class='tog-off-temp' id='lvl72'><a onclick="tog('lvl72');togParent(this);" href='#lvl72'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>Tires_0004</td><td bgcolor=#EEEEEE>PepBoys.GuestCheckOut</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl72 lvl53 lvl1 close-hide-temp" data-thisclass='lvl72' ><td>Step: 00:00:00.000<BR>Total: 00:02:09.729</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {FirstName=$firstName, LastName=$lastName, Address1=$address, City=$city, State=$state, ZipCode=$zipcode, PhoneNumber=$phoneNum, Email=$email, CardNumber=$cardNum, ExpiryMonth=$expMonth, ExpiryYear=$expYear, SecurityCode=$security, CheckoutOption=$checkoutOption}</td><td></td><td></td><td></td></tr>
+<tr class="lvl53 lvl1 close-hide-temp" data-thisclass='lvl53' id='~lvl72' ><td>Step: 00:00:00.001<BR>Total: 00:02:09.730</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0004</td><td>Tires_0004</td><td>PepBoys.GuestCheckOut</td><td>Skipped</td><td bgcolor=#FF0000>FAIL</td><td></td></tr>
+<tr class="lvl1 close-hide-temp" data-thisclass='lvl1' id='~lvl53' ><td>Step: 00:00:04.692<BR>Total: 00:02:14.422</td>
+<td></td>
+<td bgcolor=#FF0000>&bull;</td><td bgcolor=#FF0000>Tires_0004</td><td bgcolor=#FF0000></td><td bgcolor=#FF0000></td><td bgcolor=#FF0000></td><td bgcolor=#FF0000>FAIL</td><td bgcolor=#FF0000>Success: 4/19<br>Failures: 1/19<br>Skipped: 14/19</td></tr>
+<tr class="lvl1 close-hide-temp" data-thisclass='lvl1' id='lvl73' ><td>Step: 00:00:00.449<BR>Total: 00:02:14.871</td>
+<td class='tog-off-temp' id='lvl73'><a onclick="tog('lvl73');togParent(this);" href='#lvl73'></a></td>
+<td bgcolor=#CCCCCC>&bull;</td><td bgcolor=#CCCCCC>Tires_0005</td><td bgcolor=#CCCCCC></td><td bgcolor=#CCCCCC></td><td bgcolor=#CCCCCC></td><td bgcolor=#CCCCCC>STARTED</td><td bgcolor=#CCCCCC></td></tr>
+<tr class="lvl73 lvl1 close-hide-temp" data-thisclass='lvl73' id='lvl74' ><td>Step: 00:00:00.005<BR>Total: 00:02:14.876</td>
+<td class='tog-off-temp' id='lvl74'><a onclick="tog('lvl74');togParent(this);" href='#lvl74'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0005</td><td bgcolor=#EEEEEE>Tires_0005</td><td bgcolor=#EEEEEE>Browser.Launch</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl74 lvl73 lvl1 close-hide-temp" data-thisclass='lvl74' ><td>Step: 00:00:00.001<BR>Total: 00:02:14.877</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {Browser=chrome}</td><td></td><td></td><td></td></tr>
+<tr class="lvl73 lvl1 close-hide-temp" data-thisclass='lvl73' id='~lvl74' ><td>Step: 00:00:06.247<BR>Total: 00:02:21.124</td>
+<td></td>
+<td>&bull;&bull;</td><td>Tires_0005</td><td>Tires_0005</td><td>Browser.Launch</td><td></td><td bgcolor=#00FF00>PASS</td><td></td></tr>
+<tr class="lvl73 lvl1 close-hide-temp" data-thisclass='lvl73' id='lvl75' ><td>Step: 00:00:00.001<BR>Total: 00:02:21.125</td>
+<td class='tog-off-temp' id='lvl75'><a onclick="tog('lvl75');togParent(this);" href='#lvl75'></a></td>
+<td bgcolor=#EEEEEE>&bull;&bull;</td><td bgcolor=#EEEEEE>Tires_0005</td><td bgcolor=#EEEEEE>Tires_0005</td><td bgcolor=#EEEEEE>Browser.NavigateTo</td><td bgcolor=#EEEEEE></td><td bgcolor=#EEEEEE>STARTED</td><td bgcolor=#EEEEEE></td></tr>
+<tr class="lvl75 lvl73 lvl1 close-hide-temp" data-thisclass='lvl75' ><td>Step: 00:00:00.000<BR>Total: 00:02:21.125</td>
+<td></td>
+<td>&bull;&bull;&bull;</td><td></td><td></td><td>Arguments: {URL=https://qa2-hybris.pepboys.com/}</td><td></td><td></td><td></td></tr>

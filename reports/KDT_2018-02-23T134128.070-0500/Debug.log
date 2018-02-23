@@ -1,0 +1,476 @@
+2018-02-23 13:41:28,240  INFO - [T:1] [PepBoys.xlsx]
+2018-02-23 13:41:28,259  INFO - [T:1] Run by: Qualitest-Manish\Qualitest
+2018-02-23 13:41:28,260  INFO - [T:1] Opening PepBoys.xlsx
+2018-02-23 13:41:33,016  INFO - Changing log level
+2018-02-23 13:41:33,020  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:41:34,157 ERROR - [T:1] Could not load elementIdentifier.properties for application com.qualitestgroup.kdt.keywords.common.Browser
+2018-02-23 13:41:34,546  INFO - Changing log level
+2018-02-23 13:41:34,547  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:41:35,096  INFO - Changing log level
+2018-02-23 13:41:35,097  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:41:35,522  INFO - Changing log level
+2018-02-23 13:41:35,529  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:41:35,849  INFO - Changing log level
+2018-02-23 13:41:35,851  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:41:36,630  INFO - Changing log level
+2018-02-23 13:41:36,631  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:41:36,817  INFO - Changing log level
+2018-02-23 13:41:36,818  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:41:36,821  INFO - [T:1] Loading test data for Tires_0001
+2018-02-23 13:41:37,007  INFO - Changing log level
+2018-02-23 13:41:37,008  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:41:37,009  INFO - [T:1] Test run Tires_0001
+2018-02-23 13:41:37,023  INFO - [T:1] Checking Tires_0001's dependencies.
+2018-02-23 13:41:37,024  INFO - [T:1] Dependencies OK, running test.
+2018-02-23 13:41:37,034  INFO - [T:1] Initializing keyword Launch
+2018-02-23 13:41:37,152  INFO - [T:1] Executing keyword Launch
+2018-02-23 13:41:49,996  INFO - [T:1] Setting web driver ChromeDriver: chrome on XP (7086161ba558c29756556b699c696305)
+2018-02-23 13:41:50,010  INFO - [T:1] Cleaning up keyword Launch
+2018-02-23 13:41:50,021  INFO - [T:1] Keyword Launch complete.
+2018-02-23 13:41:50,037  INFO - [T:1] Initializing keyword NavigateTo
+2018-02-23 13:41:50,049  INFO - [T:1] Executing keyword NavigateTo
+2018-02-23 13:41:52,730  INFO - [T:1] Navigated to https://qa2-hybris.pepboys.com/
+2018-02-23 13:41:52,734  INFO - [T:1] Cleaning up keyword NavigateTo
+2018-02-23 13:41:52,753  INFO - [T:1] Keyword NavigateTo complete.
+2018-02-23 13:41:52,851  INFO - [T:1] Initializing keyword ClickMenu
+2018-02-23 13:41:52,856  INFO - [T:1] Executing keyword ClickMenu
+2018-02-23 13:41:52,952  WARN - [T:1] Keyword ClickMenu execution fail: Unable to click Main menu element
+2018-02-23 13:41:52,953  INFO - [T:1] Cleaning up keyword ClickMenu
+2018-02-23 13:41:52,958  INFO - [T:1] Keyword ClickMenu complete.
+2018-02-23 13:41:53,489 ERROR - [T:1] com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Unable to click Main menu element
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$ClickMenu.exec(PepBoys.java:94)
+	at com.qualitestgroup.kdt.framework.Keyword.run(Keyword.java:175)
+	at com.qualitestgroup.kdt.framework.TestStep.run(TestStep.java:263)
+	at com.qualitestgroup.kdt.framework.TestCase$TestExecution.run(TestCase.java:576)
+	at com.qualitestgroup.kdt.framework.TestCase.startRun(TestCase.java:444)
+	at com.qualitestgroup.kdt.framework.TestCase.run(TestCase.java:373)
+	at com.qualitestgroup.kdt.framework.KDTDriver.run(KDTDriver.java:336)
+	at com.qualitestgroup.kdt.framework.KDTDriver.main(KDTDriver.java:855)
+Caused by: com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Could not Click the element.
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:147)
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$ClickMenu.exec(PepBoys.java:92)
+	... 7 more
+Caused by: com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Could not find the matching element
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.getWebElement(SeleniumOperations.java:171)
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:141)
+	... 8 more
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 51 milliseconds
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'Qualitest-Manish', ip: '172.21.37.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir13296_18162}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]
+Session ID: 7086161ba558c29756556b699c696305
+*** Element info: {Using=xpath, value=//header/div[@class='primary-nav-container']/nav/ul/li/span/a[text()='Tires']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.getWebElement(SeleniumOperations.java:160)
+	... 9 more
+
+2018-02-23 13:41:55,464 ERROR - [T:1] Test run Tires_0001 failed.
+2018-02-23 13:41:55,475 ERROR - [T:1] com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Unable to click Main menu element
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$ClickMenu.exec(PepBoys.java:94)
+	at com.qualitestgroup.kdt.framework.Keyword.run(Keyword.java:175)
+	at com.qualitestgroup.kdt.framework.TestStep.run(TestStep.java:263)
+	at com.qualitestgroup.kdt.framework.TestCase$TestExecution.run(TestCase.java:576)
+	at com.qualitestgroup.kdt.framework.TestCase.startRun(TestCase.java:444)
+	at com.qualitestgroup.kdt.framework.TestCase.run(TestCase.java:373)
+	at com.qualitestgroup.kdt.framework.KDTDriver.run(KDTDriver.java:336)
+	at com.qualitestgroup.kdt.framework.KDTDriver.main(KDTDriver.java:855)
+Caused by: com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Could not Click the element.
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:147)
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$ClickMenu.exec(PepBoys.java:92)
+	... 7 more
+Caused by: com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Could not find the matching element
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.getWebElement(SeleniumOperations.java:171)
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:141)
+	... 8 more
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 51 milliseconds
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'Qualitest-Manish', ip: '172.21.37.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir13296_18162}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]
+Session ID: 7086161ba558c29756556b699c696305
+*** Element info: {Using=xpath, value=//header/div[@class='primary-nav-container']/nav/ul/li/span/a[text()='Tires']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.getWebElement(SeleniumOperations.java:160)
+	... 9 more
+
+2018-02-23 13:41:55,478  INFO - [T:1] Test run Tires_0001 completed.
+2018-02-23 13:41:55,480  INFO - [T:1] Closing driver...
+2018-02-23 13:41:57,508  INFO - [T:1] Quitting driver ChromeDriver: chrome on XP (7086161ba558c29756556b699c696305)
+2018-02-23 13:41:59,673  INFO - [T:1] Driver closed
+2018-02-23 13:42:00,249  INFO - Changing log level
+2018-02-23 13:42:00,250  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:42:00,252  INFO - [T:1] Loading test data for Tires_0002
+2018-02-23 13:42:00,648  INFO - Changing log level
+2018-02-23 13:42:00,655  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:42:00,659  INFO - [T:1] Test run Tires_0002
+2018-02-23 13:42:00,666  INFO - [T:1] Checking Tires_0002's dependencies.
+2018-02-23 13:42:00,666  INFO - [T:1] Dependencies OK, running test.
+2018-02-23 13:42:00,671  INFO - [T:1] Initializing keyword Launch
+2018-02-23 13:42:00,710  INFO - [T:1] Executing keyword Launch
+2018-02-23 13:42:06,495  INFO - [T:1] Setting web driver ChromeDriver: chrome on XP (28aee1fc031d37bba7215258a7badbeb)
+2018-02-23 13:42:06,508  INFO - [T:1] Cleaning up keyword Launch
+2018-02-23 13:42:06,520  INFO - [T:1] Keyword Launch complete.
+2018-02-23 13:42:06,530  INFO - [T:1] Initializing keyword NavigateTo
+2018-02-23 13:42:06,535  INFO - [T:1] Executing keyword NavigateTo
+2018-02-23 13:42:20,610  INFO - [T:1] Navigated to https://qa2-hybris.pepboys.com/
+2018-02-23 13:42:20,614  INFO - [T:1] Cleaning up keyword NavigateTo
+2018-02-23 13:42:20,617  INFO - [T:1] Keyword NavigateTo complete.
+2018-02-23 13:42:20,620  INFO - [T:1] Initializing keyword ClickMenu
+2018-02-23 13:42:20,621  INFO - [T:1] Executing keyword ClickMenu
+2018-02-23 13:42:20,937  INFO - [T:1] Cleaning up keyword ClickMenu
+2018-02-23 13:42:20,940  INFO - [T:1] Keyword ClickMenu complete.
+2018-02-23 13:42:20,946  INFO - [T:1] Initializing keyword ClickSubMenu
+2018-02-23 13:42:20,948  INFO - [T:1] Executing keyword ClickSubMenu
+2018-02-23 13:42:31,435  INFO - [T:1] Cleaning up keyword ClickSubMenu
+2018-02-23 13:42:31,438  INFO - [T:1] Keyword ClickSubMenu complete.
+2018-02-23 13:42:31,463  INFO - [T:1] Initializing keyword NavigateToChooseStore
+2018-02-23 13:42:31,464  INFO - [T:1] Executing keyword NavigateToChooseStore
+2018-02-23 13:42:31,470  INFO - [T:1] Initializing keyword ChooseVehicle
+2018-02-23 13:42:31,474  INFO - [T:1] Executing keyword ChooseVehicle
+2018-02-23 13:42:35,374  INFO - [T:1] Cleaning up keyword ChooseVehicle
+2018-02-23 13:42:35,385  INFO - [T:1] Keyword ChooseVehicle complete.
+2018-02-23 13:42:37,210  WARN - [T:1] Keyword NavigateToChooseStore execution fail: Unable to naviagte to store popup
+2018-02-23 13:42:37,214  INFO - [T:1] Cleaning up keyword NavigateToChooseStore
+2018-02-23 13:42:37,220  INFO - [T:1] Keyword NavigateToChooseStore complete.
+2018-02-23 13:42:37,357 ERROR - [T:1] com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Unable to naviagte to store popup
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$NavigateToChooseStore.exec(PepBoys.java:615)
+	at com.qualitestgroup.kdt.framework.Keyword.run(Keyword.java:175)
+	at com.qualitestgroup.kdt.framework.TestStep.run(TestStep.java:263)
+	at com.qualitestgroup.kdt.framework.TestCase$TestExecution.run(TestCase.java:576)
+	at com.qualitestgroup.kdt.framework.TestCase.startRun(TestCase.java:444)
+	at com.qualitestgroup.kdt.framework.TestCase.run(TestCase.java:373)
+	at com.qualitestgroup.kdt.framework.KDTDriver.run(KDTDriver.java:336)
+	at com.qualitestgroup.kdt.framework.KDTDriver.main(KDTDriver.java:855)
+Caused by: com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Could not Click the element.
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:147)
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$NavigateToChooseStore.exec(PepBoys.java:607)
+	... 7 more
+Caused by: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 113 milliseconds
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'Qualitest-Manish', ip: '172.21.37.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir8048_21505}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]
+Session ID: 28aee1fc031d37bba7215258a7badbeb
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:144)
+	... 8 more
+
+2018-02-23 13:42:38,581 ERROR - [T:1] Test run Tires_0002 failed.
+2018-02-23 13:42:38,587 ERROR - [T:1] com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Unable to naviagte to store popup
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$NavigateToChooseStore.exec(PepBoys.java:615)
+	at com.qualitestgroup.kdt.framework.Keyword.run(Keyword.java:175)
+	at com.qualitestgroup.kdt.framework.TestStep.run(TestStep.java:263)
+	at com.qualitestgroup.kdt.framework.TestCase$TestExecution.run(TestCase.java:576)
+	at com.qualitestgroup.kdt.framework.TestCase.startRun(TestCase.java:444)
+	at com.qualitestgroup.kdt.framework.TestCase.run(TestCase.java:373)
+	at com.qualitestgroup.kdt.framework.KDTDriver.run(KDTDriver.java:336)
+	at com.qualitestgroup.kdt.framework.KDTDriver.main(KDTDriver.java:855)
+Caused by: com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Could not Click the element.
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:147)
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$NavigateToChooseStore.exec(PepBoys.java:607)
+	... 7 more
+Caused by: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 113 milliseconds
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'Qualitest-Manish', ip: '172.21.37.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir8048_21505}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]
+Session ID: 28aee1fc031d37bba7215258a7badbeb
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:144)
+	... 8 more
+
+2018-02-23 13:42:38,595  INFO - [T:1] Test run Tires_0002 completed.
+2018-02-23 13:42:38,597  INFO - [T:1] Closing driver...
+2018-02-23 13:42:38,728  INFO - [T:1] Closing window CDwindow-(AA9CEA38217FE4FCE8FE1B6F3C21CFE3)
+2018-02-23 13:42:38,775  INFO - [T:1] Shop tires for your car at Pep Boys
+2018-02-23 13:42:39,013  INFO - [T:1] Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+2018-02-23 13:42:39,768  INFO - [T:1] Quitting driver ChromeDriver: chrome on XP (28aee1fc031d37bba7215258a7badbeb)
+2018-02-23 13:42:40,502  INFO - [T:1] Driver closed
+2018-02-23 13:42:40,885  INFO - Changing log level
+2018-02-23 13:42:40,929  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:42:40,944  INFO - [T:1] Loading test data for Tires_0003
+2018-02-23 13:42:41,345  INFO - Changing log level
+2018-02-23 13:42:41,359  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:42:41,360  INFO - [T:1] Test run Tires_0003
+2018-02-23 13:42:41,362  INFO - [T:1] Checking Tires_0003's dependencies.
+2018-02-23 13:42:41,362  INFO - [T:1] Dependencies OK, running test.
+2018-02-23 13:42:41,364  INFO - [T:1] Initializing keyword Launch
+2018-02-23 13:42:41,388  INFO - [T:1] Executing keyword Launch
+2018-02-23 13:42:46,959  INFO - [T:1] Setting web driver ChromeDriver: chrome on XP (d5c12471a159f921e2663b3d9ceac8ac)
+2018-02-23 13:42:46,961  INFO - [T:1] Cleaning up keyword Launch
+2018-02-23 13:42:46,964  INFO - [T:1] Keyword Launch complete.
+2018-02-23 13:42:46,966  INFO - [T:1] Initializing keyword NavigateTo
+2018-02-23 13:42:46,978  INFO - [T:1] Executing keyword NavigateTo
+2018-02-23 13:42:57,043  INFO - [T:1] Navigated to https://qa2-hybris.pepboys.com/
+2018-02-23 13:42:57,049  INFO - [T:1] Cleaning up keyword NavigateTo
+2018-02-23 13:42:57,060  INFO - [T:1] Keyword NavigateTo complete.
+2018-02-23 13:42:57,078  INFO - [T:1] Initializing keyword ClickMenu
+2018-02-23 13:42:57,085  INFO - [T:1] Executing keyword ClickMenu
+2018-02-23 13:42:58,402  INFO - [T:1] Cleaning up keyword ClickMenu
+2018-02-23 13:42:58,423  INFO - [T:1] Keyword ClickMenu complete.
+2018-02-23 13:42:58,434  INFO - [T:1] Initializing keyword ClickSubMenu
+2018-02-23 13:42:58,438  INFO - [T:1] Executing keyword ClickSubMenu
+2018-02-23 13:43:03,807  INFO - [T:1] Cleaning up keyword ClickSubMenu
+2018-02-23 13:43:03,808  INFO - [T:1] Keyword ClickSubMenu complete.
+2018-02-23 13:43:03,811  INFO - [T:1] Initializing keyword NavigateToChooseStore
+2018-02-23 13:43:03,811  INFO - [T:1] Executing keyword NavigateToChooseStore
+2018-02-23 13:43:03,812  INFO - [T:1] Initializing keyword ChooseVehicle
+2018-02-23 13:43:03,812  INFO - [T:1] Executing keyword ChooseVehicle
+2018-02-23 13:43:05,537  INFO - [T:1] Cleaning up keyword ChooseVehicle
+2018-02-23 13:43:05,539  INFO - [T:1] Keyword ChooseVehicle complete.
+2018-02-23 13:43:06,744  WARN - [T:1] Keyword NavigateToChooseStore execution fail: Unable to naviagte to store popup
+2018-02-23 13:43:06,746  INFO - [T:1] Cleaning up keyword NavigateToChooseStore
+2018-02-23 13:43:06,748  INFO - [T:1] Keyword NavigateToChooseStore complete.
+2018-02-23 13:43:06,775 ERROR - [T:1] com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Unable to naviagte to store popup
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$NavigateToChooseStore.exec(PepBoys.java:615)
+	at com.qualitestgroup.kdt.framework.Keyword.run(Keyword.java:175)
+	at com.qualitestgroup.kdt.framework.TestStep.run(TestStep.java:263)
+	at com.qualitestgroup.kdt.framework.TestCase$TestExecution.run(TestCase.java:576)
+	at com.qualitestgroup.kdt.framework.TestCase.startRun(TestCase.java:444)
+	at com.qualitestgroup.kdt.framework.TestCase.run(TestCase.java:373)
+	at com.qualitestgroup.kdt.framework.KDTDriver.run(KDTDriver.java:336)
+	at com.qualitestgroup.kdt.framework.KDTDriver.main(KDTDriver.java:855)
+Caused by: com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Could not Click the element.
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:147)
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$NavigateToChooseStore.exec(PepBoys.java:607)
+	... 7 more
+Caused by: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 29 milliseconds
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'Qualitest-Manish', ip: '172.21.37.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir11212_32146}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]
+Session ID: d5c12471a159f921e2663b3d9ceac8ac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:144)
+	... 8 more
+
+2018-02-23 13:43:07,006 ERROR - [T:1] Test run Tires_0003 failed.
+2018-02-23 13:43:07,013 ERROR - [T:1] com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Unable to naviagte to store popup
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$NavigateToChooseStore.exec(PepBoys.java:615)
+	at com.qualitestgroup.kdt.framework.Keyword.run(Keyword.java:175)
+	at com.qualitestgroup.kdt.framework.TestStep.run(TestStep.java:263)
+	at com.qualitestgroup.kdt.framework.TestCase$TestExecution.run(TestCase.java:576)
+	at com.qualitestgroup.kdt.framework.TestCase.startRun(TestCase.java:444)
+	at com.qualitestgroup.kdt.framework.TestCase.run(TestCase.java:373)
+	at com.qualitestgroup.kdt.framework.KDTDriver.run(KDTDriver.java:336)
+	at com.qualitestgroup.kdt.framework.KDTDriver.main(KDTDriver.java:855)
+Caused by: com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Could not Click the element.
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:147)
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$NavigateToChooseStore.exec(PepBoys.java:607)
+	... 7 more
+Caused by: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 29 milliseconds
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'Qualitest-Manish', ip: '172.21.37.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir11212_32146}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]
+Session ID: d5c12471a159f921e2663b3d9ceac8ac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:144)
+	... 8 more
+
+2018-02-23 13:43:07,015  INFO - [T:1] Test run Tires_0003 completed.
+2018-02-23 13:43:07,016  INFO - [T:1] Closing driver...
+2018-02-23 13:43:07,044  INFO - [T:1] Closing window CDwindow-(E5352652DF28CF0E3B998DA7E2FEFE1B)
+2018-02-23 13:43:07,056  INFO - [T:1] Shop tires for your car at Pep Boys
+2018-02-23 13:43:07,067  INFO - [T:1] Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+2018-02-23 13:43:09,582  INFO - [T:1] Quitting driver ChromeDriver: chrome on XP (d5c12471a159f921e2663b3d9ceac8ac)
+2018-02-23 13:43:10,610  INFO - [T:1] Driver closed
+2018-02-23 13:43:11,552  INFO - Changing log level
+2018-02-23 13:43:11,570  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:43:11,576  INFO - [T:1] Loading test data for Tires_0004
+2018-02-23 13:43:12,101  INFO - Changing log level
+2018-02-23 13:43:12,103  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:43:12,110  INFO - [T:1] Test run Tires_0004
+2018-02-23 13:43:12,113  INFO - [T:1] Checking Tires_0004's dependencies.
+2018-02-23 13:43:12,115  INFO - [T:1] Dependencies OK, running test.
+2018-02-23 13:43:12,119  INFO - [T:1] Initializing keyword Launch
+2018-02-23 13:43:12,151  INFO - [T:1] Executing keyword Launch
+2018-02-23 13:43:17,125  INFO - [T:1] Setting web driver ChromeDriver: chrome on XP (110032cef9684c2826dd92ded89947cc)
+2018-02-23 13:43:17,137  INFO - [T:1] Cleaning up keyword Launch
+2018-02-23 13:43:17,144  INFO - [T:1] Keyword Launch complete.
+2018-02-23 13:43:17,150  INFO - [T:1] Initializing keyword NavigateTo
+2018-02-23 13:43:17,152  INFO - [T:1] Executing keyword NavigateTo
+2018-02-23 13:43:24,318  INFO - [T:1] Navigated to https://qa2-hybris.pepboys.com/
+2018-02-23 13:43:24,321  INFO - [T:1] Cleaning up keyword NavigateTo
+2018-02-23 13:43:24,324  INFO - [T:1] Keyword NavigateTo complete.
+2018-02-23 13:43:24,333  INFO - [T:1] Initializing keyword ClickMenu
+2018-02-23 13:43:24,334  INFO - [T:1] Executing keyword ClickMenu
+2018-02-23 13:43:24,533  INFO - [T:1] Cleaning up keyword ClickMenu
+2018-02-23 13:43:24,537  INFO - [T:1] Keyword ClickMenu complete.
+2018-02-23 13:43:24,540  INFO - [T:1] Initializing keyword ClickSubMenu
+2018-02-23 13:43:24,540  INFO - [T:1] Executing keyword ClickSubMenu
+2018-02-23 13:43:29,181  INFO - [T:1] Cleaning up keyword ClickSubMenu
+2018-02-23 13:43:29,184  INFO - [T:1] Keyword ClickSubMenu complete.
+2018-02-23 13:43:29,194  INFO - [T:1] Initializing keyword NavigateToChooseStore
+2018-02-23 13:43:29,196  INFO - [T:1] Executing keyword NavigateToChooseStore
+2018-02-23 13:43:29,201  INFO - [T:1] Initializing keyword ChooseVehicle
+2018-02-23 13:43:29,215  INFO - [T:1] Executing keyword ChooseVehicle
+2018-02-23 13:43:33,788  INFO - [T:1] Cleaning up keyword ChooseVehicle
+2018-02-23 13:43:33,789  INFO - [T:1] Keyword ChooseVehicle complete.
+2018-02-23 13:43:35,956  WARN - [T:1] Keyword NavigateToChooseStore execution fail: Unable to naviagte to store popup
+2018-02-23 13:43:35,990  INFO - [T:1] Cleaning up keyword NavigateToChooseStore
+2018-02-23 13:43:36,089  INFO - [T:1] Keyword NavigateToChooseStore complete.
+2018-02-23 13:43:37,103 ERROR - [T:1] com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Unable to naviagte to store popup
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$NavigateToChooseStore.exec(PepBoys.java:615)
+	at com.qualitestgroup.kdt.framework.Keyword.run(Keyword.java:175)
+	at com.qualitestgroup.kdt.framework.TestStep.run(TestStep.java:263)
+	at com.qualitestgroup.kdt.framework.TestCase$TestExecution.run(TestCase.java:576)
+	at com.qualitestgroup.kdt.framework.TestCase.startRun(TestCase.java:444)
+	at com.qualitestgroup.kdt.framework.TestCase.run(TestCase.java:373)
+	at com.qualitestgroup.kdt.framework.KDTDriver.run(KDTDriver.java:336)
+	at com.qualitestgroup.kdt.framework.KDTDriver.main(KDTDriver.java:855)
+Caused by: com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Could not Click the element.
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:147)
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$NavigateToChooseStore.exec(PepBoys.java:607)
+	... 7 more
+Caused by: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 651 milliseconds
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'Qualitest-Manish', ip: '172.21.37.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir5924_4954}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]
+Session ID: 110032cef9684c2826dd92ded89947cc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:144)
+	... 8 more
+
+2018-02-23 13:43:37,990 ERROR - [T:1] Test run Tires_0004 failed.
+2018-02-23 13:43:38,001 ERROR - [T:1] com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Unable to naviagte to store popup
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$NavigateToChooseStore.exec(PepBoys.java:615)
+	at com.qualitestgroup.kdt.framework.Keyword.run(Keyword.java:175)
+	at com.qualitestgroup.kdt.framework.TestStep.run(TestStep.java:263)
+	at com.qualitestgroup.kdt.framework.TestCase$TestExecution.run(TestCase.java:576)
+	at com.qualitestgroup.kdt.framework.TestCase.startRun(TestCase.java:444)
+	at com.qualitestgroup.kdt.framework.TestCase.run(TestCase.java:373)
+	at com.qualitestgroup.kdt.framework.KDTDriver.run(KDTDriver.java:336)
+	at com.qualitestgroup.kdt.framework.KDTDriver.main(KDTDriver.java:855)
+Caused by: com.qualitestgroup.kdt.framework.exceptions.KDTKeywordExecException: Could not Click the element.
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:147)
+	at com.qualitestgroup.kdt.keywords.pepboys.PepBoys$NavigateToChooseStore.exec(PepBoys.java:607)
+	... 7 more
+Caused by: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 651 milliseconds
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'Qualitest-Manish', ip: '172.21.37.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir5924_4954}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore}]
+Session ID: 110032cef9684c2826dd92ded89947cc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.qualitestgroup.kdt.commonUtils.SeleniumOperations.clickElement(SeleniumOperations.java:144)
+	... 8 more
+
+2018-02-23 13:43:38,012  INFO - [T:1] Test run Tires_0004 completed.
+2018-02-23 13:43:38,012  INFO - [T:1] Closing driver...
+2018-02-23 13:43:38,075  INFO - [T:1] Closing window CDwindow-(CE2E5D596695C3F8BE1B656300816FA7)
+2018-02-23 13:43:38,113  INFO - [T:1] Shop tires for your car at Pep Boys
+2018-02-23 13:43:38,142  INFO - [T:1] Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+2018-02-23 13:43:40,954  INFO - [T:1] Quitting driver ChromeDriver: chrome on XP (110032cef9684c2826dd92ded89947cc)
+2018-02-23 13:43:41,914  INFO - [T:1] Driver closed
+2018-02-23 13:43:42,676  INFO - Changing log level
+2018-02-23 13:43:42,677  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:43:42,680  INFO - [T:1] Loading test data for Tires_0005
+2018-02-23 13:43:43,115  INFO - Changing log level
+2018-02-23 13:43:43,117  INFO - Log Level has successfuly changed to: INFO
+2018-02-23 13:43:43,122  INFO - [T:1] Test run Tires_0005
+2018-02-23 13:43:43,126  INFO - [T:1] Checking Tires_0005's dependencies.
+2018-02-23 13:43:43,126  INFO - [T:1] Dependencies OK, running test.
+2018-02-23 13:43:43,130  INFO - [T:1] Initializing keyword Launch
+2018-02-23 13:43:43,147  INFO - [T:1] Executing keyword Launch
+2018-02-23 13:43:49,318  INFO - [T:1] Setting web driver ChromeDriver: chrome on XP (a6d7d76e7d7a52cdd604ab2ca09887cc)
+2018-02-23 13:43:49,358  INFO - [T:1] Cleaning up keyword Launch
+2018-02-23 13:43:49,373  INFO - [T:1] Keyword Launch complete.
+2018-02-23 13:43:49,380  INFO - [T:1] Initializing keyword NavigateTo
+2018-02-23 13:43:49,381  INFO - [T:1] Executing keyword NavigateTo

@@ -1,0 +1,31 @@
+<!--NOT run from jar file--><!--Run from machine with name 'null'--><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Automation Test Log</title>
+<style type='text/css'>
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+th a {color: #FFFFFF;}
+.open-show {display: table-row;}
+.open-hide, .close-hide {display: none;}
+.tog-off a:before {content:'[+]';}
+.tog-on a:before {content:'[-]';}
+.tog-off {font-size: x-large; text-align: center;}
+.tog-on {font-size: x-large; text-align: center;}
+span {cursor:pointer;}
+</style>
+<script>function getClassList(e){var t=e.className,s=new Object;return s.elt=e,s.classList=t.split(' '),s.contains=function(e){return this.classList.indexOf(e)>=0},s.remove=function(e){for(var t=[];this.classList.length>0;){var s=this.classList.pop();s!=e&&t.push(s)}this.classList=t,this.elt.className=this.classList.join(' ')},s.add=function(e){this.classList.push(e),this.elt.className=this.classList.join(' ')},s.toggle=function(e){this.contains(e)?this.remove(e):this.add(e)},s.length=s.classList.length,s.item=function(e){return this.classList[e]},s}function tog(e){for(var t=document.getElementsByClassName(e),s=0;s<t.length;++s){var o=t[s],l=getClassList(o);if(o.getAttribute('data-thisclass')==e)l.toggle('open-show'),l.toggle('close-hide');else if(l.contains('open-show'))l.remove('open-show'),l.add('open-hide');else if(l.contains('open-hide')){for(var n=!0,i=0;i<l.length;i++){var g=document.getElementById(l.item(i));if(getClassList(g).contains('close-hide')){n=!1;break}}n&&(l.remove('open-hide'),l.add('open-show'))}}}function toggleAllElements(e,t){for(var s=document.getElementsByClassName(e);s.length>0;){var o=s[0],l=getClassList(o);l.toggle(e),l.toggle(t)}}function openAll(){toggleAllElements('close-hide','open-show'),toggleAllElements('open-hide','open-show'),toggleAllElements('tog-off','tog-on')}function closeAll(){toggleAllElements('open-show','close-hide'),toggleAllElements('open-hide','close-hide'),toggleAllElements('tog-on','tog-off')}function togParent(e){getClassList(e.parentNode).toggle('tog-on'),getClassList(e.parentNode).toggle('tog-off')}window.onload=function(){toggleAllElements('close-hide-temp','close-hide');for(var e=document.getElementsByClassName('tog-off-temp');e.length>0;){var t=document.getElementsByClassName(e[0].id),s=getClassList(e[0]);s.toggle('tog-off-temp'),t.length>0&&s.toggle('tog-off')}};</script>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<span id='open-hide'></span><span id='open-show'></span><span id='close-hide'></span>
+<hr size="1" noshade>
+<div>Log session start time Fri Feb 23 13:40:45 EST 2018<div>Run by: Qualitest-Manish\Qualitest</div><div style='float: right;'>vnull</div><br>
+</div>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Open <a onclick='openAll()' href='#'>all</a><br />Close <a onclick='closeAll()' href='#'>all</a></th><th>Test File</th><th>Test Case ID</th><th>Test Scenario</th><th>Keywords</th><th>Error Message</th><th>Result</th><th>Comments</th>
+</tr>
+</table>
+<br>
+</body></html>

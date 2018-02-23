@@ -1,2 +1,2 @@
-# Hybris_test
-Hybris test
+# Hybris_KDT
+Qualitest Automcation Project
