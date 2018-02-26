@@ -152,6 +152,12 @@
 							<version>2.27.0</version>
 						</driver>
 						<driver>
+							<name>chromedriver</name>
+							<platform>linux</platform>
+							<bit>64</bit>
+							<version>2.27.0</version>
+						</driver>
+						<driver>
 							<name>geckodriver</name>
 							<platform>windows</platform>
 							<bit>32</bit>
